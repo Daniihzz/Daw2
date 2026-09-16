@@ -106,7 +106,7 @@
         echo "Hola, soy " . $yo["nombre"];
         echo "<br>";
         echo "Tengo " . $yo["edad"] . " años";
-        
+        echo "hola"
 
 ?>
 </body>
