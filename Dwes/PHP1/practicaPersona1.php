@@ -85,7 +85,7 @@
     echo "<br>";   
     echo $fruta;
     }
-    //
+    //Arrayo asociativo
     $usuario = ["Daniel", 20, "España"];
     
     $usuario2 = [
@@ -93,8 +93,20 @@
         "edad" => 20,
         "pais" => "España"
     ];
-    
-    
+        echo "<br>";echo "<br>";
+        echo $usuario2 ["edad"];
+
+        $yo = [
+            "nombre" => "Daniel",
+            "edad" => "20",
+            "curso" => "2Daw",
+            "lenguaje" => "php"
+        ];
+
+        echo "Hola, soy " . $yo["nombre"];
+        echo "<br>";
+        echo "Tengo " . $yo["edad"] . " años";
+        
 
 ?>
 </body>
