@@ -43,7 +43,7 @@
         $age= "asdkalsd";
         var_dump($age);
         $age = false;
-        var_dump($age);
+        var_dump($age); 
         
 
         //CONSTANTES
@@ -52,6 +52,15 @@
         $precio = 20.3;
         echo "<p>El precio de IVA es: " . $precio + $precio * IVA_GENERAL . "</p>";
         echo "<p>El precio de IVA reducido  es: " . $precio + $precio  * IVA_REDUCIDO . "</p>";
+
+        var_dump(PHP_VERSION);
+
+        var_dump (__LINE__);
+        echo "<br>";
+        var_dump(__FILE__);
+        
+        echo __
+
 
             ?>
     </p>
