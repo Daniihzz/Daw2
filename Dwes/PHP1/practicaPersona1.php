@@ -98,15 +98,35 @@
 
         $yo = [
             "nombre" => "Daniel",
-            "edad" => "20",
+            "edad" => 20,
             "curso" => "2Daw",
             "lenguaje" => "php"
         ];
-
+        echo "<br>";
         echo "Hola, soy " . $yo["nombre"];
         echo "<br>";
         echo "Tengo " . $yo["edad"] . " años";
-        echo "hola"
+        echo "<br>";
+        echo "Estudio ". $yo["curso"];
+        echo "<br>";
+        echo "Estoy aprendiendo " . $yo["lenguaje"];
+
+        $usuarios = [
+            [
+                "nombre" => "Daniel",
+                "edad" => 20
+            ],
+
+            [
+                "nombre" => "Ana",
+                "edad" => 21
+            ],
+
+            [
+                "nombre" => "Maripaz",
+                "edad" => "71"
+            ]
+        ];
 
 ?>
 </body>
