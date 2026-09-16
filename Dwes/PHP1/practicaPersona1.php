@@ -7,85 +7,25 @@
 </head>
 <body>
     <?php
-    $tinto = 12.2341234;
-    echo number_format($tinto,2). "€";
-    echo "<br>";
-    $age = 21;
-    
-    if($age >= 18){
-        echo "<p>Puedes entrar</p>";
-    } else {
-        echo "<p>No puedes entrar</p>";
-    }
-
-    $edad = 20;
-    $dinero = 15;
-
-    if($edad >= 18 && $dinero>=10){
-        echo "Puedes entrar y tienes dinero";
-    } else {
-        echo "no puedes entrarxd";
-    }
-
-    $nombre = "Daniel";
-    $edad = 20;
-    $dinero = 50;
-    $esMiembro = true;
-
-    $producto = "Teclado";
-    $precio = 45;
-
-    /*if ($edad >= 20){
-        if($dinero > $precio){
-            if($esMiembro){
-                $descuento = $precio * 0.10;
-                $nuevoPrecio = $precio - $descuento;
-                echo "<br>";
-                echo "Precio original: " . $precio . "€";
-                echo "<br>";
-                echo "Descuento: " . $descuento;
-                 echo "<br>";
-                echo "Precio final:" . number_format($nuevoPrecio, 2) . "€";
-            } else {
-                echo "Precio final: " . $precio;
-            }
-        } else {
-            echo "<br>";
-            echo $nombre . " " . "no tienes suficiente dinero";
-        }
-    } else {
-        echo "<br>";
-        echo $nombre . " " . "no puedes realizar esta compra";
-    } */
-
-    if($edad < 18){
-        echo "Eres menor";
-    }
-    elseif($dinero < $precio){
-        echo "No tienes dinero";
-    }
-    elseif($esMiembro){
-        $descuento = $precio * 0.10;
-                $nuevoPrecio = $precio - $descuento;
-                echo "<br>";
-                echo "Precio original: " . $precio . "€";
-                echo "<br>";
-                echo "Descuento: " . $descuento;
-                echo "<br>";
-                echo "Precio final:" . number_format($nuevoPrecio, 2) . "€";
-            } else {
-                echo "Precio final: " . $precio;
-            }
+   
     //Array indexado
+    
     $frutas = ["manzana", "platano", "fresa", "naranja"];
     echo "<br>";echo "<br>";
     echo $frutas[0];
+
+    //foreach
 
     foreach ($frutas as $fruta){
     echo "<br>";   
     echo $fruta;
     }
-    //Arrayo asociativo
+
+
+
+
+    //Arrayo asociativo y ejercicio
+
     $usuario = ["Daniel", 20, "España"];
     
     $usuario2 = [
@@ -93,6 +33,8 @@
         "edad" => 20,
         "pais" => "España"
     ];
+
+
         echo "<br>";echo "<br>";
         echo $usuario2 ["edad"];
 
@@ -110,7 +52,10 @@
         echo "Estudio ". $yo["curso"];
         echo "<br>";
         echo "Estoy aprendiendo " . $yo["lenguaje"];
+        
 
+
+    //Array dentro de Array
         $usuarios = [
             [
                 "nombre" => "Daniel",
