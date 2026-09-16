@@ -85,7 +85,7 @@
     echo "<br>";   
     echo $fruta;
     }
-    echo "hola"
+    
     
 
 ?>
