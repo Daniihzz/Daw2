@@ -76,7 +76,7 @@
             } else {
                 echo "Precio final: " . $precio;
             }
-
+    //Array indexado
     $frutas = ["manzana", "platano", "fresa", "naranja"];
     echo "<br>";echo "<br>";
     echo $frutas[0];
@@ -85,6 +85,14 @@
     echo "<br>";   
     echo $fruta;
     }
+    //
+    $usuario = ["Daniel", 20, "España"];
+    
+    $usuario2 = [
+        "nombre" => "Daniel",
+        "edad" => 20,
+        "pais" => "España"
+    ];
     
     
 
