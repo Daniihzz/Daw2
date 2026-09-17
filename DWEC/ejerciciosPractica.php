@@ -22,6 +22,9 @@
         case 4:
             echo '<script src="ejerciciosPractica4.js"></script>';
             break;
+         case 5:
+            echo '<script src="ejerciciosPractica5.js"></script>';
+            break;
             }
        
     ?>
