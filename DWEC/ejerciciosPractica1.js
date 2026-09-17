@@ -50,5 +50,7 @@ switch(opcion){
     case "6":
         salir = confirm("¿Seguro que quieres salir?")
         break;
+        default:
+            "otro";
 }
 }

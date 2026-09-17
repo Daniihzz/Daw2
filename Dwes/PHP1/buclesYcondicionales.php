@@ -14,6 +14,9 @@
     } else {
         echo "<p>Eres menor de edad</p>";
     }
+
+    //Ternario
+    $mensaje = ""
     ?>
 </body>
 </html>

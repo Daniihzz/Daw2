@@ -7,12 +7,12 @@
 </head>
 <body>
     <?php
-    $ejercicio = 1;
+    $ejercicio = 4;
+    //cambiar el numero para cambiar de ejercicio y probarlo xd
     switch ($ejercicio){
         case 1:
             echo '<script src="ejerciciosPractica1.js"></script> ';
             break;
-
         case 2:
             echo '<script src="ejerciciosPractica2.js"></script>';
             break;
