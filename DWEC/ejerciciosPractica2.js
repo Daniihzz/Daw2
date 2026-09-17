@@ -1,7 +1,17 @@
 let num = Number(prompt("Seleccion un numero entero"))
-let numP = 1
-if(num === numP){
+let sum = 1
+let total = " "
+let guarda = num
+
+if(3 >2){
     for(let i = 1; i<num;i++){
-        console.log()
+
+       sum *= guarda // 5*4+4*3
+       total += guarda+"x" 
+       guarda-=1
+       console.log(sum)
+       
     }
+    console.log(total + "="+sum)
 }
+
