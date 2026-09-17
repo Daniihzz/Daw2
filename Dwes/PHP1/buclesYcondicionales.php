@@ -16,7 +16,7 @@
     }
 
     $dia = 3;
-    $nombre = match(dia){
+    $nombre = match($dia){
         1 => "Lunes",
         2 => "Martes",
         3 => "Miercoles",
