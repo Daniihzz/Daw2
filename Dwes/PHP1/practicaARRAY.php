@@ -72,6 +72,8 @@
                 "edad" => "71"
             ]
         ];
+    echo "<br>";
+        echo $usuarios[1]["nombre"];
 
 ?>
 </body>
