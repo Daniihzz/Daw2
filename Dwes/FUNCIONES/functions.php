@@ -9,7 +9,7 @@
     <?php
     // Funcion que reciba una cantidad de 
     // notas y devuelve la cantidad de personas aprobadas
-    function aprobados($notas):int{
+    function aprobados(array $notas):int{
         $pasa = 0;
         $noPasa = 0;
         foreach($notas as $n){
@@ -23,7 +23,9 @@
     }
 
     $dani = [1,4,7,8,5,6,8,9,3];
-    echo aprobados($dani);
+    echo aprobados([1,4,7,8,5,6,8,9,3]);
+
+
     ?>
 </body>
 </html>
