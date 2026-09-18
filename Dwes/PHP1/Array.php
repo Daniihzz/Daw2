@@ -93,8 +93,40 @@
     var_dump(in_array(9.0, $notas));
     var_dump(in_array(9.1, $notas));
 
-    //IMPLODE
+    //IMPLODE PARA AGRAGARLE A CADA ELEMENTO DEL ARRAY
     echo implode(",",$notas);
+
+    //EXPLODE PARA QUITARLE ALGO
+    $nombres = "Juan#Carlos#Maria";
+    $arrayNombres = explode("#", $nombres);
+    var_dump($arrayNombres);
+
+
+    //Array asociativo
+    $p = [
+        "Pedro" => "Presidente",
+        "Pilar" => "Educacion",
+        "Oscar" => "Transporte",
+        "Marlaska" => "Interior"
+    ];  
+
+    //ORDENAR POR VALOR ASCENDENTE
+    asort($p);
+    var_dump($p);
+    
+
+    //ORDENAR POR DESCENDENTE
+    arsort($p);
+    var_dump($p);
+
+    //POR CLAVE ASCENDENTE
+    ksort($p);
+    var_dump($p);
+
+    //POR CLAVE DESCENDENTE
+    krsort($p);
+    var_dump($p);
+
     ?>
 </body>
 
