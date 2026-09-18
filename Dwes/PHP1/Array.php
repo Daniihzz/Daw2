@@ -127,6 +127,17 @@
     krsort($p);
     var_dump($p);
 
+    foreach ($p as $w => $r){
+        echo $w . "<br>";
+    }
+
+    //FUNCION QUE ME DEVUELVE LAS CLAVES EN UN ARRAY NORMAL
+
+    $claves = array_keys($p);
+    echo implode("-", $claves);
+    
+
+
     ?>
 </body>
 
