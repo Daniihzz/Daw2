@@ -66,6 +66,36 @@
     }
 
     ?>
+    <h2>Funciones con Arrays</h2>
+    <?php
+    $notas = [9.0,6.9,7.5,8.2];
+    //suma
+    $suma = array_sum($notas);
+    echo $suma;
+    echo"<br>";
+    //Longitud y media
+    $numeroDeNotas = count($notas);
+    $media = $suma / $numeroDeNotas;
+    echo $media;
+    //ORGANIZARLO sort => menor a mayor rsort => mayor a menos
+    sort($notas);
+    var_dump($notas); 
+
+    //REVOLVER
+    shuffle($notas);
+    var_dump($notas); 
+
+    //Nota mas alta
+    rsort($notas);
+    echo $notas[0];
+
+    //BUSCAR UN ELEMENTO
+    var_dump(in_array(9.0, $notas));
+    var_dump(in_array(9.1, $notas));
+
+    //IMPLODE
+    echo implode(",",$notas);
+    ?>
 </body>
 
 </html>
