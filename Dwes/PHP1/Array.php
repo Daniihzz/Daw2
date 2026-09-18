@@ -55,9 +55,15 @@
     foreach($capitals as $c => $capital){
         echo "La capital de $c es $capital<br>";
     }
-   //Para borra
+   //Para borrar datos de variables
     unset($capitals["Colombia"]);
     var_dump($capitals);
+
+    if(isset($capitals["Georgia"])){
+        echo "La capital de Georgia es " . $capitals["Georgia"]. "<br>";
+    } else {
+        echo "No tiene xd<br>";
+    }
 
     ?>
 </body>
