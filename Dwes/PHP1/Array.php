@@ -132,10 +132,16 @@
     }
 
     //FUNCION QUE ME DEVUELVE LAS CLAVES EN UN ARRAY NORMAL
-
     $claves = array_keys($p);
     echo implode("-", $claves);
-    
+
+
+    //EN QUE POSICION ESTA UN ELEMENTO, DEVUELVE LA CLAVE Y SI NO ESTA UN FALSE
+    $resultado = array_search("Presidente", $p);
+    var_dump($resultado);
+
+
+
 
 
     ?>
