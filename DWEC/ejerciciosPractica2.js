@@ -3,7 +3,6 @@ let sum = 1
 let total = " "
 let guarda = num
 
-if(3 >2){
     for(let i = 1; i<num;i++){
 
        sum *= guarda // 5*4+4*3
@@ -13,5 +12,5 @@ if(3 >2){
        
     }
     console.log(total + "="+sum)
-}
+
 

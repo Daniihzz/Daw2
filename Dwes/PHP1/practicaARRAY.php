@@ -34,6 +34,8 @@
         "pais" => "España"
     ];
 
+    $usuario2 = ["Color"] = "Azul";
+
 
         echo "<br>";echo "<br>";
         echo $usuario2 ["edad"];
@@ -55,6 +57,7 @@
         
 
 
+
     //Array dentro de Array
         $usuarios = [
             [
@@ -74,6 +77,7 @@
         ];
     echo "<br>";
         echo $usuarios[1]["nombre"];
+        
 
 ?>
 </body>
