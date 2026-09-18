@@ -45,7 +45,6 @@
     echo count($capitals);  //3
     //Meto un elemento nuevo: Colombia - Bogotá
     $capitals['Colombia'] = 'Bogotá';
-    $capitals['Portugal'] = 49;
     $capitals["Georgia"] = "Tbilisi";
     echo "<br>";
     echo "<br>";
@@ -53,6 +52,12 @@
         echo $capita . ".<br>";
     }
 
+    foreach($capitals as $c => $capital){
+        echo "La capital de $c es $capital<br>";
+    }
+   //Para borra
+    unset($capitals["Colombia"]);
+    var_dump($capitals);
 
     ?>
 </body>
