@@ -7,15 +7,20 @@ dix =[
 ["profesor", "teacher"]
 ]
 
-dixx = [[]]
+dixx = []
 let suma = 0
  console.table(dix)
+
+
 dix.forEach(fila => {
-    fila.forEach(numero => {
-        if (dix.includes(total)){
-            
-        }
-    })
+   if(fila.includes(total)){
+    dixx.push(fila);
+   }
+   else {
+    console.log("No se ha encontrado la palabra")
+   }
 })
+
+console.table(dixx)
 
 
