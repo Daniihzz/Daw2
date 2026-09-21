@@ -1,8 +1,21 @@
 let total = prompt("Dime una palabra")
 //ni se como empezar xd
-dix = ["agua", "water"], ["amarillo", "yellow"]
-forEach ()
-arr[i][0]
+dix =[ 
+["colegio", "school"], 
+["casa", "home"],
+["baño", "bathroom"],
+["profesor", "teacher"]
+]
 
-dicc = []
+dixx = [[]]
+let suma = 0
+ console.table(dix)
+dix.forEach(fila => {
+    fila.forEach(numero => {
+        if (dix.includes(total)){
+            
+        }
+    })
+})
+
 

@@ -27,11 +27,42 @@
 
     echo "<br>";echo "<br>";
     
-    function concatenacion($palabra, $palabra2){
+    function concatenacion($palabra, $palabra2): string{
         return $palabra . $palabra2;
     } 
 
     echo concatenacion("Hola", "Joaquin");
+
+
+    function saludo($nombre, $saludito = "Hola"): string{
+        return $saludito . ", " . $nombre;
+    }
+    echo "<br>";echo "<br>";
+    echo saludo("Juan");
+
+
+    function ordenar(array $arr, bool $boo) {
+        if($boo){
+            rsort($arr);
+        } else {
+           sort($arr);
+        }
+         return $arr;
+    }
+
+    echo "<br>";echo "<br>";
+
+    var_dump(ordenar([3,2,6,4], true));
+    var_dump(ordenar([3,2,6,4], false));
+
+    echo "<br>";echo "<br>";
+    function suma(...$nums){
+        return array_sum($nums);
+    }
+
+   echo suma(2,1,34,56,6,1,4,4,1,4,54,2)
+
+
     ?>
 </body>
 </html>
