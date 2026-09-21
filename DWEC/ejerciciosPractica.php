@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    $ejercicio = 7;
+    $ejercicio = 4;
     //cambiar el numero para cambiar de ejercicio y probarlo xd
     switch ($ejercicio){
         case 1:

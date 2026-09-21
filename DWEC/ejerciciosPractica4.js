@@ -8,7 +8,11 @@ if (!isNaN(num)) {
             total.push([i, "x", num, "=", num * i])
         }
         console.table(total)
+    } else {
+        console.log("No se ha introducido un numero valido")
     }
+} else {
+        console.log("No se ha introducido un numero valido")
 }
 
 
