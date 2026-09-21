@@ -25,7 +25,13 @@
     $dani = [1,4,7,8,5,6,8,9,3];
     echo aprobados([1,4,7,8,5,6,8,9,3]);
 
+    echo "<br>";echo "<br>";
+    
+    function concatenacion($palabra, $palabra2){
+        return $palabra . $palabra2;
+    } 
 
+    echo concatenacion("Hola", "Joaquin");
     ?>
 </body>
 </html>
