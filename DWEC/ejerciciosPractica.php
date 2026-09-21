@@ -31,6 +31,9 @@
              case 7:
             echo '<script src="ejerciciosPractica7.js"></script>';
             break;
+            case 8:
+            echo '<script src="ejerciciosPractica8.js"></script>';
+            break;
             }
        
     ?>
