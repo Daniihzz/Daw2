@@ -1,14 +1,29 @@
-let num1 = Number(prompt("Dame un numero"))
-let num2 = Number(prompt("Dame un numero"))
+let total = prompt("Dime tu usuario")
+let toti
+let arr = [
+    ["Daniel", "123D"],
+    ["Lucas", "44D"],
+    ["SiHao", "3982L"],
+    ["Hashiko", "7765W"]
+];
 
-if(num1 < num2){
- while (num1!=num2){
-       num1++
-       if(num1 != num2){
-        console.log(num1)
-       }
-       
+let dix = []
+arr.forEach(fila =>{
+    if(fila.includes(total)){
+        dix.push=fila
+        toti = prompt("INGRESA TU CONTRASEÑA")
+        dix.forEach (fila => {
+            if(fila.includes(toti)){
+                console.log("BIENVENIDO!!! :)")
+                console.table(dix)
+            } else {
+                console.log("CONTRASEÑA INCORRECTA")
+            }
+        })
+    } else {
+        console.log("USUARIO INEXISTENTE")
     }
-} else {
-    console.log("ERROR!!")
-}
+})
+
+
+
