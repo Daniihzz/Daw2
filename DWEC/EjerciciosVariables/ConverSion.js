@@ -63,11 +63,26 @@ if(cade === 18.5){
 
 // 6
 cade = 100;
-cade = 100 + "0"
+cade = cade + ""
 if(cade === "100"){
     console.log("6: Correcto");
     console.log("...........");
 }
 
+//7
+cade = 1;
+cade = Boolean(cade)
+if(cade === true){
+    console.log("7: Correcto");
+    console.log("...........");
+}
+
+// 8
+cade = " ";
+cade = Boolean(cade)
+if(cade === true){
+    console.log("8: Correcto");
+    console.log("...........");
+}
 
 
