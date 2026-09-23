@@ -7,6 +7,7 @@ let arr = [
     ["SiHao", "3982L"],
     ["Hashiko", "7765W"]
 ];
+
 console.table(arr)
 let real = false
 let dix = []
