@@ -1,3 +1,4 @@
+
 let total = prompt("Dime tu usuario")
 let toti
 let arr = [
@@ -6,11 +7,13 @@ let arr = [
     ["SiHao", "3982L"],
     ["Hashiko", "7765W"]
 ];
-
+console.table(arr)
+let real = false
 let dix = []
 arr.forEach(fila =>{
     if(fila.includes(total)){
-        dix.push=fila
+        real = true
+        dix.push(fila)
         toti = prompt("INGRESA TU CONTRASEÑA")
         dix.forEach (fila => {
             if(fila.includes(toti)){
@@ -20,7 +23,8 @@ arr.forEach(fila =>{
                 console.log("CONTRASEÑA INCORRECTA")
             }
         })
-    } else {
+    } 
+    if(real == false){
         console.log("USUARIO INEXISTENTE")
     }
 })
