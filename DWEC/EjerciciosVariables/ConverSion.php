@@ -15,10 +15,8 @@
             echo '<script src="ConverSion.js"></script>';
             break;
         case 2:
-
             break;
         case 3:
-
             break;
     }
 

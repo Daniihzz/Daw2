@@ -21,7 +21,7 @@ var contador = 0;
 
 // 1
 let cade = "25";
-cade = parseInt(cade);
+cade = Number(cade);
 if(cade === 25){
     console.log("1: Correcto");
     console.log("...........");
