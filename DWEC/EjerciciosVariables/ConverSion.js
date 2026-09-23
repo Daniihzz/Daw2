@@ -19,4 +19,55 @@ var contador = 0;
 
 // EJERCICIO 6
 
+// 1
 let cade = "25";
+cade = parseInt(cade);
+if(cade === 25){
+    console.log("1: Correcto");
+    console.log("...........");
+}
+
+// 2
+cade = "12.8";
+cade = parseFloat(cade);
+if(cade === 12.8){
+    console.log("2: Correcto");
+    console.log("...........");
+}
+
+// 3
+cade = "12.8";
+cade = parseInt(cade);
+if(cade === 12){
+    console.log("3: Correcto");
+    console.log("...........");
+}
+
+
+// 4
+cade = "15abc";
+cade = parseInt(cade);
+if(cade === 15){
+    console.log("4: Correcto");
+    console.log("...........");
+}
+
+
+// 5
+cade = "18.5kg";
+cade = parseFloat(cade);
+if(cade === 18.5){
+    console.log("5: Correcto");
+    console.log("...........");
+}
+
+// 6
+cade = 100;
+cade = 100 + "0"
+if(cade === "100"){
+    console.log("6: Correcto");
+    console.log("...........");
+}
+
+
+
