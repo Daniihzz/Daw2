@@ -2,7 +2,7 @@
 
 $pinoccio = [
     [
-        "name" => "carpaccio",
+        "name" => "Carpaccio",
         "address" => "Gran via 26",
         "employees" => [4, 7, 2],
         "quantity" => [
@@ -20,6 +20,9 @@ $pinoccio = [
             "drinks" => 12,
             "desserts" => 20
         ]
+    ],
+    [
+        "name" => "Mario Bros",
     ]
 
 ];
