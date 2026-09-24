@@ -61,7 +61,47 @@ error_reporting(E_ALL);
             <th>Camareros</th>
             <th>Otros</th>
         </tr>
+        <tr>
+            <?php
+            foreach($pinoccio as $r){
+                echo "<tr>";
+                echo "<td>{$r['name']}</td>";
+                if(isset($r['employees'])){
+                    foreach ($r['employees'] as $number){
+                        echo "<td>$number</td>";
+                    }
+                } else {
+                    echo "<td></td><td></td><td></td>";
+                }
+                echo "</tr>";
+            }
+            echo "<br>";
+            ?>
+        </tr>
     </table>
+        <?php
+            function asoci($arr): string{
+                $ret = '<table border="1">';
+                $ret .= "<tr>
+                <th>Nombre</th>
+                <th>Tipo</th></tr>";
+                foreach ($arr as $rest){
+                foreach($rest as $p => $k){
+                    $ret .= "<tr>
+                    <td>$p</td>
+                    <td>". gettype($k)."</td>
+                    </tr>";
+                }
+            }
+                $ret .= $ret . "</table>";
+                return $ret;
+            }
+
+            echo asoci($pinoccio);            
+?>
+<?php
+
+?>
 
 
 

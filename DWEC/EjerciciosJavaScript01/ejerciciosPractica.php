@@ -7,9 +7,10 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <?php
-    $ejercicio = 9;
+    $ejercicio = 2;
     //cambiar el numero para cambiar de ejercicio y probarlo xd
     switch ($ejercicio) {
         case 1:
