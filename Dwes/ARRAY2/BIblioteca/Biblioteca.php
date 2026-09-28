@@ -110,29 +110,85 @@ echo$biblioteca["Ciencia Ficcion"][1]["anio"];
 // 8) Recorre todas las categorías y, dentro de cada una, muestra el
 //    título de cada libro, con el formato:
 //    "Ciencia Ficción -> Fundación"
+echo "<br>";
 
-for($i = 0; $i<count($biblioteca);$i++){
-    echo $k[$i];
+foreach ($biblioteca as $p => $k) {
+    // echo " $p " . "-->";
+    foreach ($k as $l) {
+        echo $p . "->" . $l["titulo"] . "<br>";
+    }
+    echo "<br>";
 }
 
 
 // 9) Recorre todo el array y muestra únicamente los libros publicados
 //    ANTES del año 1980, junto con su categoría.
 
+foreach($biblioteca as $p => $k){
+    foreach($k as $l ){
+        if($l["anio"] < 1980){
+            echo $l["titulo"];
+            echo "<br>";
+        }
+   
+    }
+}
 
 // 10) Recorre todos los libros y, para los que tengan "ejemplares",
 //     suma el total de ejemplares en todas las sedes y muéstralo así:
 //     "Sapiens: 15 ejemplares en total"
+ echo "<br>";
+foreach ($biblioteca as $p => $k) {
+    foreach ($k as $l) {
+         echo $l["titulo"]; 
+       if(isset($l["ejemplares"])){
+       echo ": " . array_sum($l["ejemplares"]) . " " . "<br>";
+       }
+    }
+}
+
 
 
 // 11) Recorre todos los libros y detecta si alguna sede tiene 0
 //     ejemplares de algún libro. Muestra avisos con el formato:
 //     "Fundación no tiene ejemplares en Sur"
+ echo "<br>";
+foreach ($biblioteca as $p => $k) {
+    foreach ($k as $l) {
+       if(!isset($l["ejemplares"])){
+        echo $l["titulo"]; 
+        echo " no tiene ejemplares";
+       }
+    }
+}
+ echo "<br>";
 
 
 // 12) Recorre todos los libros que tengan "resenas" y calcula la nota
 //     media de cada uno (redondeada a 1 decimal). Muestra:
 //     "Sapiens - nota media: 4.0"
+ echo "<br>";
+ 
+foreach ($biblioteca as $p => $k) {
+    foreach ($k as $l) {
+       
+        echo "<br>";
+    if(isset($l["resenas"])){
+        $total = count($l["resenas"]);
+
+     foreach ($l["resenas"] as $o){
+        $suma += $o["nota"];
+     }    
+
+     $media = round($suma / $total);
+     
+      
+    }
+    
+}
+}
+
+
 
 
 // 13) Recorre TODO el array (categorías, libros y reseñas) y cuenta
