@@ -37,27 +37,11 @@
                         <?= $key['nombre']; ?>
                     </td>
 
-                    <td class="
-                    <?php
-                    if ($key['matematicas'] > 8) {
-                        echo "green";
-                    } else {
-                        echo "red";
-                    }
-                    if($key["matematicas"] >= 9){
-                        echo " negrita";
-                    }
-                    ?>
-                    ">
+                    <td>
                         <?= $key['matematicas']; ?>
 
                     </td>
-                    <td class="
-                    <?= $key['historia'] >= 8 ? "green " : "red" ?>
-                    <?= $key['historia'] >= 9 ? "negrita " : ""?>
-                    <?= $key['historia'] >= 9 ? "cursiva " : ""?>
-                    <?= $key['historia'] >= 9 ? "peque " : ""?>
-                    ">
+                    <td>
                         <?= $key['historia'] ?>
                     </td>
 

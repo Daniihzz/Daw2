@@ -5,3 +5,25 @@ body{
 .green{
     background-color: greenyellow;
 }
+
+.red{
+    background-color: rgb(223, 78  , 78);
+    color: white;
+
+}
+
+.negrita{
+    
+    font-weight:bold;
+    font-size:larger;
+}
+
+.peque{
+    font-size: smaller;
+}
+
+.cursiva{
+    font-size: italic;
+}
+
+
