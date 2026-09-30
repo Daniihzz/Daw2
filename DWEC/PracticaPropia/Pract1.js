@@ -24,6 +24,16 @@ let jugador = {
     vida: 100,
     ataque: 25
 }
+let enemigo = {
+    nombre: "Santiago",
+    nivel: 20,
+    vida: 100,
+    ataque: 25
+}
+
+function atacar(jugador, objetivo){
+    objetivo.vida -= jugador.ataque
+}
 
 
 function recibirDanio(jugador, daño){
