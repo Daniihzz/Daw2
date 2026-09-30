@@ -1,15 +1,18 @@
-let contactos = [
-    ["Daniel", "600111222"],
-    ["Lucas", "611222333"],
-    ["María", "622333444"]
-];
+// REPASO FUNCIONES
+function nombreFuncion(){
+    return "hola"
+}
 
-console.log(".....................")
-console.log("1. Ver contactos")
-console.log("2. Buscar contacto")
-console.log("3. Añadir contacto")
-console.log("4. Eliminar contacto")
-console.log("4. Eliminar contacto")
-console.log(".....................")
+function sumar(a,b){
+    return a + b
+}
 
+let resultado = sumar(5,3)
+
+function nombre(nom){
+    return "Hola "+ nom
+}
+
+// PÀRA MOSTRAR
+console.log(nombre("Daniel"))
 

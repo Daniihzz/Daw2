@@ -170,21 +170,17 @@ foreach ($biblioteca as $p => $k) {
  echo "<br>";
  
 foreach ($biblioteca as $p => $k) {
-    foreach ($k as $l) {
-       
-        echo "<br>";
+    foreach ($k as $l) { 
     if(isset($l["resenas"])){
         $total = count($l["resenas"]);
-
+        $suma = 0;
      foreach ($l["resenas"] as $o){
         $suma += $o["nota"];
      }    
 
-     $media = round($suma / $total);
-     
-      
-    }
-    
+     $media = round($suma / $total,1);
+      echo $l["titulo"]. "  Media: " . $media . "<br>";
+    }  
 }
 }
 
