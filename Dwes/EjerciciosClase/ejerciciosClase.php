@@ -77,11 +77,8 @@
                         <?php
                         for ($i = 0; $i <= 10; $i++) {
                             echo "<th>" . $i . "</th>";
-
                         }
                         ?>
-
-
                     </tr>
                 </thead>
                 <tbody>
@@ -91,9 +88,6 @@
                         echo "<td>" . $i . "</td>";
                         echo "</tr>";
                     }
-
-                    
-
                     ?>
                     <?php
                     ?>

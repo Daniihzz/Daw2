@@ -1,76 +1,51 @@
-// REPASO FUNCIONES
-function nombreFuncion(){
-    return "hola"
-}
 
-function sumar(a,b){
-    return a + b
-}
+let numeros = [5, 10, 15, 20];
 
-let resultado = sumar(5,3)
+let dobles = numeros.map(numero => numero *2);
 
-function nombre(nom){
-    return "Hola "+ nom
-}
+console.table(dobles)
 
-// PÀRA MOSTRAR
-console.log(nombre("Daniel"))
+let nombres = ["dani", "bachira", "isagi", "nagi"];
 
+let mayus = nombres.map(total => total.toUpperCase());
+console.table(mayus)
 
-// PARA CREAR OBJETOS
-let jugador = {
-    nombre: "Daniel",
-    nivel: 20,
-    vida: 100,
-    ataque: 25
-}
-let enemigo = {
-    nombre: "Santiago",
-    nivel: 20,
-    vida: 100,
-    ataque: 25
-}
-
-function atacar(jugador, objetivo){
-    objetivo.vida -= jugador.ataque
-}
-
-
-function recibirDanio(jugador, daño){
-    jugador.vida -= daño;
-}
-
-
-function recibirDanio(jugador, daño){
-    jugador.vida -= daño;
-}
-
-
-
-
-
-
-
-
-// PARA ACCEDER A LOS DATOS
-console.log(jugador.nombre)
-let arr = [[1,2,3,4,5],
-[1,2,3,4,5],
-[1,2,3,4,5]
+let personajes = [
+    { nombre: "Bachira", edad: 17 },
+    { nombre: "Isagi", edad: 17 },
+    { nombre: "Nagi", edad: 18 }
 ];
- 
 
-console.table(arr);
+let edades = personajes.map(xx => xx.edad);
+console.table(edades);
 
-almacen:
-for(let i = 0;i < arr.length;i++){
-    for(let j = 0; j<arr[i].length;j++){
-        if(i === 2 && j === 4){
-            console.log("Producto localizado")
-            break almacen;
-        } else {
-          console.log(i + " " + j);
-        }
-       
-    }
-}
+let info = personajes.map(k => `${k.nombre} tiene ${k.edad} años`)
+console.log(info)
+
+
+let juegos = [
+    { nombre: "Minecraft", precio: 30 },
+    { nombre: "Terraria", precio: 10 },
+    { nombre: "Undertale", precio: 10 }
+];
+
+let info2 = juegos.map(p => `${p.nombre} cuesta ${p.precio}€`)
+console.log(info2)
+
+let productos = [
+    { nombre: "Camiseta", precio: 20 },
+    { nombre: "Pantalón", precio: 40 },
+    { nombre: "Zapatillas", precio: 60 }
+];
+
+let nuevos = productos.map(p => ({
+    nombre: p.nombre,
+    precio: (p.precio) + (p.precio*0.10)
+}))
+
+let mina = [
+    [1,2,3,4],
+    [5,4,7,8,9]
+]
+console.table(mina)
+
