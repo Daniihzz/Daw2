@@ -10,7 +10,7 @@
 
 <body>
     <?php
-    $respuesta = 3;
+    $respuesta = 6;
     switch ($respuesta) {
         case 1:
             $number = 2;
@@ -24,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                     <?php
                     for ($i = 0; $i <= 10; $i++) {
                         echo "<tr>";
@@ -88,13 +88,13 @@
                     for ($i = 0; $i <= 9; $i++) {
                         echo "<tr>";
                         echo "<td class ='queso'>" . $i . "</td>";
-                        for($j = 0; $j <= 9; $j++){
-                        echo "<td class='loco'>" . ($i * $j) . "</td>";
+                        for ($j = 0; $j <= 9; $j++) {
+                            echo "<td class='loco'>" . ($i * $j) . "</td>";
                         }
                         echo "</tr>";
                     }
                     ?>
-                    
+
                 </tbody>
             </table>
             <?php
@@ -102,44 +102,72 @@
 
         case 5:
             $random = [];
-            for($i = 0; $i <= 20; $i++){
-            $random[]= rand(10,50);
+            for ($i = 0; $i <= 20; $i++) {
+                $random[] = rand(10, 50);
             }
-            
-           echo "<p>" . implode(",", $random);
-
-           echo "<p>" . "SUMA";
-           echo "<br>". $sum = array_sum($random);
+            echo "<p>" . implode(",", $random);
+            echo "<p>" . "SUMA";
+            echo "<br>" . $sum = array_sum($random);
 
             echo "<p>" . "MEDIA";
-           echo "<br>". $sum = array_sum($random) / $cont = count($random);
-            
-           echo "<p>" . "MAX";
-           echo "<br>". $smax = max($random);
+            echo "<br>" . $sum = array_sum($random) / $cont = count($random);
 
-           echo "<p>" . "MIN";
-           echo "<br>". $smin = min($random);
-        break;
+            echo "<p>" . "MAX";
+            echo "<br>" . $smax = max($random);
+
+            echo "<p>" . "MIN";
+            echo "<br>" . $smin = min($random);
+            break;
 
         case 6:
+        
             $students = [
-    ["nombre" => "Ana García", "matematicas" => 8.5, "historia" => 7.0, "programacion" => 9.0],
-    ["nombre" => "Luis Martínez", "matematicas" => 6.0, "historia" => 8.5, "programacion" => 7.5],
-    ["nombre" => "Marta Rodríguez", "matematicas" => 9.0, "historia" => 6.5, "programacion" => 8.0],
-    ["nombre" => "Carlos López", "matematicas" => 7.5, "historia" => 9.0, "programacion" => 6.5],
-    ["nombre" => "Elena Torres", "matematicas" => 8.0, "historia" => 7.5, "programacion" => 9.5]
-]; 
-            $tot = count($students);
-            for($i = 0; $i < count($students);$i++){
+                ["nombre" => "Ana García", "matematicas" => 8.5, "historia" => 7.0, "programacion" => 9.0],
+                ["nombre" => "Luis Martínez", "matematicas" => 6.0, "historia" => 8.5, "programacion" => 7.5],
+                ["nombre" => "Marta Rodríguez", "matematicas" => 9.0, "historia" => 6.5, "programacion" => 8.0],
+                ["nombre" => "Carlos López", "matematicas" => 7.5, "historia" => 9.0, "programacion" => 6.5],
+                ["nombre" => "Elena Torres", "matematicas" => 8.0, "historia" => 7.5, "programacion" => 9.5]
+            ];
+            for ($i = 0; $i < count($students); $i++) {
                 $sumM = $students[$i]["matematicas"] + $students[$i]["historia"] + $students[$i]["programacion"];
-                $promM = $sumM / $tot;
+                $promM = $sumM / 3;
                 $students[$i]["media"] = $promM;
             }
             var_dump($students);
+            $alta = [];
+            foreach ($students as $x) {
+                $alta[] = $x["media"];
+            }
 
+            var_dump($alta);
+            echo "<p>" . "MAX" . "<br>";
+            echo "<strong>".max($alta)."</strong>";
+            $mates = 0;
+            $historiaM = 0;
+            $programacioM = 0;
             foreach($students as $x){
+                if($x["matematicas"] >= 7){
+                $mates++;
+                }
+                if($x["historia"] >= 7){
+                $historiaM++;
+                }
+                if($x["programacion"] >= 7){
+                $programacioM++;
+                }
+            }
+            echo '<br>';
+            echo "Mates: $mates'<br>'";
+            echo "Historia: $historiaM'<br>'";
+            echo "Programacion: $programacioM'<br>'";
+
+            $maxi=[];
+            foreach($students as $x){ 
+                
                 
             }
+
+
 
 
             // foreach($students as $x){
@@ -151,9 +179,9 @@
             //      echo "<br>"; echo "<br>";
             //         $x["media"] = $promM;
             // }
+    
 
-        
-        break;
+            break;
     }
 
     ?>
