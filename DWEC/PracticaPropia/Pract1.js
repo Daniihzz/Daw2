@@ -1,7 +1,7 @@
 // MAP PARA MODIFICAR OBJETOS
 let numeros = [5, 10, 15, 20];
 
-let dobles = numeros.map(numero => numero *2);
+let dobles = numeros.map(numero => numero * 2);
 
 console.table(dobles)
 
@@ -40,7 +40,7 @@ let productos = [
 
 let nuevos = productos.map(p => ({
     nombre: p.nombre,
-    precio: (p.precio) + (p.precio*0.10)
+    precio: (p.precio) + (p.precio * 0.10)
 }))
 
 // FILTER PARA QUEDARTE CON ALGUNOS ELEMENTOS
@@ -63,15 +63,62 @@ let poland2 = juegos2.filter(x => x.precio >= 20 && x.precio < 40)
 
 
 
-
-
-
-
-
-
 let mina = [
-    [1,2,3,4],
-    [5,4,7,8,9]
+    [1, 2, 3, 4],
+    [5, 4, 7, 8, 9]
 ]
+
 console.table(mina)
 
+// EJercicios de practica
+
+// Hacer que el numero se multiplique por 3
+let numeross = [2, 4, 6, 8, 10];
+
+let triples = numeross.map(x => x*3)
+console.table(triples)
+
+let nombress = ["dani", "bachira", "isagi", "nagi"];
+
+let largos = nombress.filter(x => x.length>4)
+console.log(largos)
+
+
+
+
+
+
+
+
+
+
+
+arr1 = [1, 2, 3, 4, 5]
+for (let valor of arr1) console.log(valor)
+
+const lenguajes = ["js", "java", "python", "php", "c#"]
+
+// primero
+console.log(lenguajes[0])
+// Tercero
+console.log(lenguajes[2])
+
+// Ultimo
+let ulti = (lenguajes.length-1)
+console.log(lenguajes[ulti])
+
+// Ultimo con indice
+
+console.log(lenguajes.length-1)
+
+
+// EJERCICIO 2.2
+const temp = [18,21,24,20,17]
+console.log(".........")
+
+console.log(temp[0])
+console.log(".........")
+console.log(temp[3])
+console.log(".........")
+temp[2] = 25
+console.log(temp)
