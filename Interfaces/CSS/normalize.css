@@ -40,7 +40,6 @@ main {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-  color: blue;
 }
 
 /* Grouping content
@@ -113,6 +112,27 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
+
+
+.navbar{
+background-color: rgb(211, 211, 211);
+padding: 20px;
+}
+
+
+
+.navbar__item{
+    list-style:none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.navbar__item:hover{
+background-color: rgb(45, 63, 19);
+color:aliceblue
+
+}
 
 small {
   font-size: 80%;
