@@ -187,6 +187,65 @@
 
             }
 
+            function analyzeWords($arr){
+            $maximo = 0;
+            $nuevo = 0;
+            $larga = "";
+            $cont = 0;
+            $minimo = PHP_INT_MAX;
+            $palabraCorta = "";
+
+            foreach($arr as $ax){
+              $nuevo = strlen($ax);
+                if($nuevo > $maximo){
+                    $maximo = $nuevo;
+                    $larga = $ax;
+                }
+            }
+
+            foreach($arr as $ax){
+              $nuevo = strlen($ax); 
+                if($nuevo < $minimo){
+                    $minimo = $nuevo;
+                    $palabraCorta = $ax;
+                }
+            }
+
+            foreach($arr as $ax){
+              $cont++;
+            }
+
+            return 
+                [
+                    "number_of_words" => $cont,
+                    "longest_word" => $larga,
+                     "shortest_word"=> $palabraCorta
+                ];
+
+    }
+     $prueba = ["hola", "adios", "buenos", "z"];
+            var_dump(analyzeWords($prueba));
+
+        function convertTemperature ($temp, $origen="celsius", $dest="fahrenheit"){
+          $tinto = false;
+          $tempNueva = 0;
+
+            switch($dest){
+            case "celsius":
+                break;
+            case "fahrenheit":
+
+            break;
+            case "kelvin":
+            break;
+
+            default:
+            $tinto = true;
+        }
+
+        return $tempNueva;
+        }
+
 
             break;
     }
