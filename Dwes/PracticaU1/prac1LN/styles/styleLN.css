@@ -1,0 +1,109 @@
+/* ---------- Ejercicio 1 ---------- */
+.figura {
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+
+table,
+td,
+th,
+tr {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+/* Cabeceras de los días 6 y 7 (fin de semana) */
+th:nth-child(n+7):nth-child(-n+8) {
+    background-color: lightgreen;
+}
+
+
+/* ---------- Ejercicio 2 ---------- */
+
+/* Fila de la ciudad con la media más alta */
+.yellow td:nth-child(n+2):nth-child(-n+8) {
+    background-color: #fff2cc;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cursiva {
+    color: brown;
+    font-style: italic;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.ciudad {
+    background-color: lightblue;
+}
+
+.media {
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+/* Tabla resumen */
+.tabla {
+    background-color: #f5f6f7;
+    border: 1px solid #e0e0e0;
+}
+
+.tabla caption {
+    background-color: #f5f6f7;
+    color: #333;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+    text-decoration: underline;
+}
+
+.tablita {
+    border: none;
+    text-align: left;
+}
+
+/* ---------- Ejercicio 4 ---------- */
+.stock-alto {
+    background-color: lightgreen;
+}
+
+.stock-medio {
+    background-color: #fff2a8;
+}
+
+.stock-bajo {
+    background-color: #ff9c9c;
+}
+
+del {
+    color: grey;
+}
