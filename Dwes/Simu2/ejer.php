@@ -161,7 +161,6 @@
     echo "Alumnos suspensos: ". $sus;
     echo "<br>";
     echo "Mejor alumno: " . $mejor . " con " . $mejorNota;
-
     ?>
 
 
