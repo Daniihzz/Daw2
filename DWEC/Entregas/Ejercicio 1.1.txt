@@ -1,0 +1,104 @@
+//Ejercicio 1.1
+const colores = ["rojo", "verde", "azul"];
+colores.push("amarillo");
+colores.unshift("negro");
+console.log(colores);
+console.log(colores.length);
+
+
+//Ejercicio 1.2
+const numeros = [10, 20, 30];
+numeros[numeros.length] = 40;
+numeros[5] = 60;
+console.log(numeros);
+console.log(numeros[4]);
+
+
+//Ejercicio 2.1
+const animales = ["perro", "gato", "conejo", "loro", "pez"];
+animales.pop();
+animales.shift();
+console.log(animales);
+
+
+//Ejercicio 2.2
+const numeros2 = [5, 10, 15, 20, 25, 30];
+numeros2.splice(2, 1);
+console.log(numeros2);
+numeros2.splice(2, 2);
+console.log(numeros2);
+
+
+//Ejercicio 2.3
+const valores = [1, 2, 3, 4, 5, 6, 7];
+valores.length = 4;
+
+
+//Ejercicio 3.1
+const original = [10, 20, 30, 40, 50];
+const copia = original.slice();
+copia[0] = 99;
+console.log(original);
+console.log(copia);
+
+
+//Ejercicio 3.2
+const datos = [2, 4, 6, 8, 10, 12, 14];
+const parte1 = datos.slice(2, 5);
+const parte2 = datos.slice(4);
+
+
+//Ejercicio 3.3
+const array1 = [1, 2, 3];
+const array2 = array1;
+array2[0] = 99;
+console.log(array1);
+console.log("Se modifica array1 porque array2 y array1 apuntan a la misma referencia en memoria.");
+
+
+//Ejercicio 4.1
+const frutas = ["pera", "manzana", "uva", "manzana", "kiwi"];
+console.log(frutas.indexOf("manzana"));
+console.log(frutas.indexOf("kiwi"));
+console.log(frutas.indexOf("naranja"));
+console.log(frutas.indexOf("manzana", 2));
+
+
+//Ejercicio 4.2
+console.log(frutas.lastIndexOf("manzana"));
+console.log(frutas.lastIndexOf("pera"));
+console.log(frutas.lastIndexOf("naranja"));
+
+
+//Ejercicio 4.3
+const valores2 = [10, "10", 20, "20"];
+console.log(valores2.indexOf(10));
+console.log(valores2.indexOf("10"));
+console.log(valores2.indexOf(20));
+console.log(valores2.indexOf("20"));
+
+
+//Ejercicio 5.1
+const letras = ["d", "a", "c", "b"];
+letras.sort();
+console.log(letras);
+
+
+//Ejercicio 5.2
+const numeros3 = [3, 20, 100, 5, 12];
+numeros3.sort();
+console.log(numeros3);
+console.log("El orden es alfabético, no numérico, porque sort() convierte los números a texto por defecto.");
+
+
+//Ejercicio 5.3
+const valores3 = [1, 2, 3, 4, 5];
+valores3.reverse();
+console.log(valores3);
+
+
+//Ejercicio 5.4
+const palabras = ["pera", "Manzana", "uva", "melón"];
+palabras.sort();
+console.log(palabras);
+console.log("Las mayúsculas van primero porque sort() utiliza los valores de la tabla Unicode.");

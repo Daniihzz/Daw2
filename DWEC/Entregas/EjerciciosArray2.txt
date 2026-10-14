@@ -1,0 +1,34 @@
+Ejercicio 6.1
+const temperaturas = [3, -2, 7, -5, 0, 9, -1];
+const bajoCero = temperaturas.filter(t => t < 0);
+console.log(bajoCero);
+console.log(temperaturas);
+
+Ejercicio 6.2
+const precios6 = [12, 45, 8, 75, 30, 120, 19];
+const preciosMayores = precios6.filter(p => p > 30);
+const preciosMenoresOIguales = precios6.filter(p => p <= 30);
+console.log(preciosMayores);
+console.log(preciosMenoresOIguales);
+
+Ejercicio 7.1
+const precios7 = [20, 40, 60, 80];
+const preciosDescuento = precios7.map(p => p * 0.75);
+console.log(preciosDescuento);
+console.log(precios7);
+
+Ejercicio 7.2
+const metros = [1.5, 3, 0.75, 10];
+const centimetros = metros.map(m => m * 100);
+console.log(centimetros);
+
+Ejercicio 8.1
+const factores = [2, 3, 4, 5];
+const producto = factores.reduce((acumulador, actual) => acumulador * actual, 1);
+console.log(producto);
+
+
+Ejercicio 8.2
+const puntuaciones = [18, 42, 27, 65, 39];
+const maxima = puntuaciones.reduce((acumulador, actual) => actual > acumulador ? actual : acumulador, 0);
+console.log(maxima);
