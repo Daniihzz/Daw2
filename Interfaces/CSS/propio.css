@@ -1,0 +1,52 @@
+body {
+    background: #151522 ;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.galeria {
+    display:flex;
+    justify-content: center;
+    gap:35px;
+    margin-top: 60px;
+}
+
+.figura{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.circulo{
+    background: #c455f7;
+    border-radius: 50%;
+}
+
+.cuadrado{
+    background: #55bef7;
+    
+}
+
+.rombo{
+    background: #f75593;
+    transform: rotate(45deg);
+    
+}
+
+.figura:hover {
+    transform: scale(1.2);
+}
+
+
+.circulo:hover{
+    box-shadow: 0 0 30px #c455f7;
+}
+.rombo:hover{
+    transform: rotate(45deg) scale(1.2);
+    box-shadow: 0 0 30px #f75593;
+}
+
+.cuadrado:hover{
+box-shadow: 0 0 30px #55bef7;
+}
